@@ -1,0 +1,101 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@font-face {
+  font-family: 'nohemi';
+  src: url('./assets/nohemi-font/Nohemi-ExtraLight.woff') format('woff');
+  font-weight: 300; /* Extrathin font weight */
+}
+
+@font-face {
+  font-family: 'nohemi';
+  src: url('./assets/nohemi-font/Nohemi-ExtraLight.woff') format('woff');
+  /* font-weight: bold; */
+}
+
+@font-face {
+  font-family: 'nohemi-regular';
+  src: url('./assets/nohemi-font/Nohemi-Regular.woff') format('woff');
+  /* font-weight: bold; */
+}
+
+body{
+  font-family: 'nohemi';
+  /* font-weight: bold; */
+}
+
+h1{
+  font-family: 'nohemi-regular';
+}
+
+option{
+  font-weight: 200;
+}
+
+
+.flag-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+#phone-number {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='flag-icon'><path d='M22 9a10 10 0 0 1-10 10H2.5'/><circle cx='9' cy='21' r='1'/><path d='M22 9a10 10 0 0 0-10-10 10 10 0 0 0-10 10 10 10 0 0 0 10 10 10 10 0 0 0 10-10z'/></svg>");
+}
+
+/* styles.css */
+
+.phone-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.fixed-position{
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  /* width: 60%;?? */
+  /* opacity: 0.9; */
+  background: #04032033;
+}
+
+.overlay-container{
+  position: relative;
+  width: 100%;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #04032033;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.positioning-text{
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+  right: 5%;
+  background: linear-gradient(52.57deg, rgba(253, 252, 252, 0.45) 43.37%, rgba(253, 252, 252, 0.3) 142.37%, rgba(253, 252, 252, 0.5) 142.37%);
+  color: white;
+  font-size: 32px;
+  line-height: 36px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px #0000000D;
+}
